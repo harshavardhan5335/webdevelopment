@@ -1,0 +1,20 @@
+#foo {
+  color: rgb(0, 8, 255);
+  text-align: Center;
+}
+#foo1 {
+  color: rgb(0, 0, 0);
+  text-align: Center;
+}
+#foo2 {
+  color: rgb(0, 255, 123);
+  text-align: Center;
+}
+.bazz {
+  color: rgb(255, 157, 0);
+  text-align: Center;
+}
+
+h1 {
+  color: tomato;
+}
