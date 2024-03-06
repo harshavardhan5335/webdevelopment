@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increase Button Size on Click</title>
+    <style>
+        /* Initial button style */
+        #clickButton {
+            font-size: 1px;
+            padding: 1px 1px;
+            
+            transition: all 0.3s ease;
+            background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+        
+    }
+     
+    </style>
+
+</head>
+<body>
+    <div>
+        <h2>Increase Button Size on Click</h2>
+        <!-- Button -->
+        <button  id="clickButton" onclick="increaseSize()">Every time you press you'll get closer to gay</button>
+    </div>
+
+    <!-- JavaScript code to handle button click and increase size -->
+    <script>
+        // Function to increase the size of the button
+        function increaseSize() {
+            // Get the button element
+            var button = document.getElementById('clickButton');
+            
+            // Get the current font size of the button
+            var currentSize = window.getComputedStyle(button).fontSize;
+
+            // Parse the current font size and increase it
+            var newSize = parseInt(currentSize) + 7;
+
+            // Apply the new font size to the button
+            button.style.fontSize = newSize + 'px';
+        }
+    </script>
+</body>
+</html>

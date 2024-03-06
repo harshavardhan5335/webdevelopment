@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Click Counter</title>
+    <style>
+        /* Some basic styling for the button and counter */
+        #counter {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Button Click Counter</h2>
+        <!-- Counter display -->
+        <p id="counter">Count: 0</p>
+        <!-- Button -->
+        <button id="clickButton">Click me!</button>
+    </div>
+
+    <!-- JavaScript code to handle button click and count increment -->
+    <script>
+        // Get the button and counter elements
+        const clickButton = document.getElementById('clickButton');
+        const counterDisplay = document.getElementById('counter');
+
+        // Variable to keep track of the count
+        let count = 0;
+
+        // Function to update the counter display
+        function updateCounter() {
+            counterDisplay.textContent = 'Count: ' + count;
+        }
+
+        // Event listener for the button click
+        clickButton.addEventListener('click', function() {
+            // Increase the count
+            count++;
+            // Update the counter display
+            updateCounter();
+        });
+    </script>
+</body>
+</html>
